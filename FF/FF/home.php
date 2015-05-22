@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+	include "h.php"
+?>
 <html lang="en">
 	<head>
 		<meta charset="utf-8"></meta>
@@ -35,12 +38,12 @@
 					<ul class="nav navbar-nav">
 						::before
 						<li class="active">
-							<a href="home.html">
+							<a href="home.php">
 								Home
 							</a>
 						</li>
 						<li>
-							<a href="adoptions.html">
+							<a href="adoptions.php">
 								Adoptions
 							</a>
 						</li>
@@ -78,12 +81,12 @@
 			</div>
 			<div style="text-align: center">
 				<h4>
-					<a href="adoptions.html">
+					<a href="adoptions.php?add=cat">
 						Search felines
 						<img class="img-thumbnail" alt="Missing Pet" src="pic/catlogo.gif" style="float: center; width: 200px; height: 200px;" ></img>
 					</a>
-					<a href="adoptions.html">
-						<img href="adoptions.html" class="img-thumbnail" alt="Missing Pet" src="pic/doglogo.gif" style="float: center; width: 200px; height: 200px;" ></img>
+					<a href="adoptions.php?add=dog" name="dog_selected">
+						<img class="img-thumbnail" alt="Missing Pet" src="pic/doglogo.gif" style="float: center; width: 200px; height: 200px;" ></img>
 						Search canines
 					</a>
 				</h4>

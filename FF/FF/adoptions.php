@@ -5,10 +5,10 @@
 		<meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
 		<meta content="width=device-width, initial-scale=1" name="viewport"></meta>
 		<!-- Important meta tags according to getbootstrap.com -->
-		<meta content="" name="This is the volunteers page for Forever Furries Adoption repository"></meta>
+		<meta content="" name="This is the adoptions page for Forever Furries Adoption repository"></meta>
 		<meta content="" name="CS361 Project B"></meta>
 		<title>
-			Forever Furries - Volunteers
+			Forever Furries - Adoptions
 		</title>
 		<!-- Bootstrap core CSS -->
 		<link rel="stylesheet" href="css/bootstrap.css"></link>
@@ -39,12 +39,12 @@
 								Home
 							</a>
 						</li>
-						<li>
+						<li class="active">
 							<a href="adoptions.php">
 								Adoptions
 							</a>
 						</li>
-						<li class="active">
+						<li>
 							<a href="volunteers.html">
 								Volunteers
 							</a>
@@ -64,10 +64,13 @@
 			<!-- This class creates a gray block for large text on the page -->
 			<div class="jumbotron">
 					<h1>
-							Volunteers Needed!
+							Pets Available for Adoption
 					</h1>
 					<p>
-							Your local shelter is able to operate thanks to amazing support from local volunteers. If you would like to help care for the special pets in your community, plesae select your shelter and submit your volunteer information form.
+							To aid you in finding your new pet, please use the filter options below to narrow down your search.
+							<?php
+								include "a.php" ;
+							?>
 					</p>
 			</div>
 		</div>
