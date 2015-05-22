@@ -98,34 +98,34 @@
 				</h1>
 			</div>
 			<!-- Create 10x clickable pet thumbnail images -->
-			<a href="adoptions.html">
+			<a href="adoptions.php">
 				<img class="img-thumbnail" alt="Missing Pet" src="pic/cat1.jpg" style="width: 200px; height: 200px;" ></img>
 			</a>
-			<a href="adoptions.html">
+			<a href="adoptions.php">
 				<img class="img-thumbnail" alt="Missing Pet" src="pic/dog1.jpg" style="width: 200px; height: 200px;" ></img>
 			</a>
-			<a href="adoptions.html">
+			<a href="adoptions.php">
 				<img class="img-thumbnail" alt="Missing Pet" src="pic/dog2.jpg" style="width: 200px; height: 200px;" ></img>
 			</a>
-			<a href="adoptions.html">
+			<a href="adoptions.php">
 				<img class="img-thumbnail" alt="Missing Pet" src="pic/cat2.jpg" style="width: 200px; height: 200px;" ></img>
 			</a>
-			<a href="adoptions.html">
+			<a href="adoptions.php">
 				<img class="img-thumbnail" alt="Missing Pet" src="pic/cat3.jpg" style="width: 200px; height: 200px;" ></img>
 			</a>
-			<a href="adoptions.html">
+			<a href="adoptions.php">
 				<img class="img-thumbnail" alt="Missing Pet" src="pic/dog3.jpg" style="width: 200px; height: 200px;" ></img>
 			</a>
-			<a href="adoptions.html">
+			<a href="adoptions.php">
 				<img class="img-thumbnail" alt="Missing Pet" src="pic/cat4.jpg" style="width: 200px; height: 200px;" ></img>
 			</a>
-			<a href="adoptions.html">
+			<a href="adoptions.php">
 				<img class="img-thumbnail" alt="Missing Pet" src="pic/cat5.jpg" style="width: 200px; height: 200px;" ></img>
 			</a>
-			<a href="adoptions.html">
+			<a href="adoptions.php">
 				<img class="img-thumbnail" alt="Missing Pet" src="pic/dog4.jpg" style="width: 200px; height: 200px;" ></img>
 			</a>
-			<a href="adoptions.html">
+			<a href="adoptions.php">
 				<img class="img-thumbnail" alt="Missing Pet" src="pic/dog5.jpg" style="width: 200px; height: 200px;" ></img>
 			</a>
 		</div>
