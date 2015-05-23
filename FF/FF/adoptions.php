@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="shortcut icon" href="pic/favicon.ico">
 		<meta charset="utf-8"></meta>
 		<meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
 		<meta content="width=device-width, initial-scale=1" name="viewport"></meta>
@@ -80,6 +81,15 @@
 								</a>
 							</h4>
 						</div>
+						<!--Unit test for URL change-->
+						<button onclick="myFunction()">Unit test for URL refresh</button>
+						<p id="search"></p>
+						<script>
+							function myFunction() {
+							    var x = document.URL;
+							    document.getElementById("search").innerHTML = x;
+							}
+						</script>
 						<!--Variable set for cat or dog choice on page refresh-->
 						<?php
 							session_start();
@@ -91,6 +101,7 @@
 							}
 							echo "You have chosen: ";
 							echo $_SESSION["search"];
+							session_destroy();
 						?>
 					</p>
 			</div>
