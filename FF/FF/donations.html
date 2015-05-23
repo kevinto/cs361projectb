@@ -26,7 +26,7 @@
 			<div class="container">
 				<div class="navbar-header">
 					<!-- Upper left page name button -->
-					<a class="navbar-brand" href="home.html">
+					<a class="navbar-brand" href="home.php">
 						<img src="pic/pawlogo.png" height="22" width="25"></img>
 					</a>
 				</div>
