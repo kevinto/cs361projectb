@@ -26,8 +26,8 @@
 			<div class="container">
 				<div class="navbar-header">
 					<!-- Upper left page name button -->
-					<a class="navbar-brand" href="home.php">
-						<img src="pic/pawlogo.png" height="22" width="25"></img>
+					<a class="navbar-brand" href="home.html">
+						<img src="pic/foreverfurries.gif" height="25px" widht="150px"></img>
 					</a>
 				</div>
 				<!-- Navigation bar menu items -->
@@ -35,7 +35,7 @@
 					<ul class="nav navbar-nav">
 						::before
 						<li>
-							<a href="home.php">
+							<a href="home.html">
 								Home
 							</a>
 						</li>
@@ -67,10 +67,31 @@
 							Pets Available for Adoption
 					</h1>
 					<p>
-							To aid you in finding your new pet, please use the filter options below to narrow down your search.
-							<?php
-								include "a.php" ;
-							?>
+						To aid you in finding your new pet, please use the filter options below to narrow down your search.
+						<div style="text-align: center">
+							<h4>
+								<a href="adoptions.php?add=cat">
+									Search felines
+									<img class="img-thumbnail" alt="Missing Pet" src="pic/catlogo.gif" style="float: center; width: 200px; height: 200px;" ></img>
+								</a>
+								<a href="adoptions.php?add=dog">
+									<img class="img-thumbnail" alt="Missing Pet" src="pic/doglogo.gif" style="float: center; width: 200px; height: 200px;" ></img>
+									Search canines
+								</a>
+							</h4>
+						</div>
+						<!--Variable set for cat or dog choice on page refresh-->
+						<?php
+							session_start();
+							if($_GET["add"] == 'cat'){
+								$_SESSION["search"] = "cat";
+							}
+							elseif($_GET["add"] == 'dog'){
+								$_SESSION["search"] = "dog";
+							}
+							echo "You have chosen: ";
+							echo $_SESSION["search"];
+						?>
 					</p>
 			</div>
 		</div>
