@@ -1,0 +1,42 @@
+
+CREATE TABLE shelters (
+  shelterNumber INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  shelterName varchar(50) NOT NULL,
+  phone varchar(50) NOT NULL,
+  addressLine1 varchar(50) NOT NULL,
+  addressLine2 varchar(50) default NULL,
+  city varchar(50) NOT NULL,
+  state varchar(50) NOT NULL,
+  postalCode varchar(15) NOT NULL,
+  country varchar(50) NOT NULL,
+  emailAddress varchar(50) NOT NULL,
+  PRIMARY KEY  (shelterNumber), UNIQUE (
+  phone,addressLine1,emailAddress)
+) ENGINE = InnoDB;
+
+INSERT INTO shelters (
+  shelterName, 
+  phone, 
+  addressLine1, 
+  addressLine2, 
+  city, 
+  state, 
+  postalCode,
+  country, 
+  emailAddress) 
+VALUES ('testvalue','9704567878','testValue','testValue','testValue','testValue','testValue','testValue','testValue');
+
+INSERT INTO shelters (
+  shelterName, 
+  phone, 
+  addressLine1, 
+  addressLine2, 
+  city, 
+  state, 
+  postalCode,
+  country, 
+  emailAddress) 
+VALUES ('testvalue1','8782345678','testValue1','testValue1','testValue1','testValue1','testValue1','testValue1','testValue1');
+
+
+
