@@ -5,9 +5,18 @@ function populateShelterDropbox() {
     return function() {
       if (request.readyState == 4) {
         // Result is an array of JSON objects
-        var resultObj = JSON.parse(request.responseText);
-        alert("test");
-      }
+        var resultObj = JSON.parse(request.responseText);        
+        var selectElement = document.getElementById('SelectShelter');
+        
+        for (var i = 0; i < resultObj.length; i++) {
+        	var currentObj = JSON.parse(resultObj[i]);
+        	var option = document.createElement('option');
+		    option.value = currentObj.emailAddress;
+		    option.innerHTML = currentObj.display;
+		    selectElement.appendChild(option);
+        }
+        
+       }
     }
   };
 
@@ -17,6 +26,11 @@ function populateShelterDropbox() {
   };
 
   callAppPhp(shelterDropDownReturnFunc, shelterParams);
+}
+
+function getCurrentShelterOption() {
+	var selectElement = document.getElementById("SelectShelter");
+	return selectElement.options[selectElement.selectedIndex].value;
 }
 
 /*
