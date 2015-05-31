@@ -74,3 +74,9 @@ function callAppPhp(returnFunc, postParams) {
     request.send(postParamsStr);
     return request;
 }
+
+// TEST SECTION --------------------------------------------------------------
+function getCurrentShelterOptionTest() {
+    var currentOption = getCurrentShelterOption();
+    alert(currentOption);
+}
