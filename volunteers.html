@@ -1,22 +1,23 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<link rel="shortcut icon" href="pic/favicon.ico">
-		<meta charset="utf-8"></meta>
-		<meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
-		<meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+		<meta charset="utf-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
 		<!-- Important meta tags according to getbootstrap.com -->
-		<meta content="" name="This is the volunteers page for Forever Furries Adoption repository"></meta>
-		<meta content="" name="CS361 Project B"></meta>
+		<meta content="" name="This is the volunteers page for Forever Furries Adoption repository">
+		<meta content="" name="CS361 Project B">
 		<title>
 			Forever Furries - Volunteers
 		</title>
 		<!-- Bootstrap core CSS -->
-		<link rel="stylesheet" href="css/bootstrap.css"></link>
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<!-- Bootstrap theme -->
-		<link rel="stylesheet" href="css/bootstrap-theme.css"></link>
+		<link rel="stylesheet" href="css/bootstrap-theme.css">
+		<script src='js/volunteer.js'></script>
 	</head>
-	<body role="document">
+	<body role="document" onload="populateShelterDropbox();">
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -28,13 +29,12 @@
 				<div class="navbar-header">
 					<!-- Upper left page name button -->
 					<a class="navbar-brand" href="home.html">
-						<img src="pic/foreverfurries.gif" height="25px" widht="150px"></img>
+						<img src="pic/foreverfurries.gif" height="25" width="150" alt="gif img">
 					</a>
 				</div>
 				<!-- Navigation bar menu items -->
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						::before
 						<li>
 							<a href="home.html">
 								Home
@@ -73,26 +73,25 @@
 					
 			</div>
 			<form role="form" onsubmit="return false;">
-	      <div class="form-group">
-	        <select name="Select1">
-				<option>Test 1</option>
-				<option>Test 2</option>
-				<option>Test 3</option>
-			</select>
-	      </div>
-	      <button type="submit" class="btn btn-primary">Submit Volunteer Information</button>
-	    </form>
-
+	      		<div class="form-group">
+			        <select name="Select1">
+						<option value="emailaddress">Test 1</option>
+						<option>Test 2</option>
+						<option>Test 3</option>
+					</select>
+	      		</div>
+	     		<button type="submit" class="btn btn-primary">Submit Volunteer Information</button>
+	    	</form>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<br /><br />
+				<div style="text-align:center">
+					<img src="pic/footerlogo.gif" height="70" width="150" alt="footer img">
+					<p class="text-muted">&copy;<br /></p>
+				</div>
+				<br /><br />
+			</div>
 		</div>
 	</body>
-	<footer class="footer">
-		<div class="container">
-			<br /><br />
-			<div style="text-align:center">
-				<img src="pic/footerlogo.gif" height="70" width="150"></img>
-				<p class="text-muted">&copy;<br /></p>
-			</div>
-			<br /><br />
-		</div>
-	</footer>
 </html>

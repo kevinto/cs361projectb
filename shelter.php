@@ -17,7 +17,7 @@
   }
   
   if ($_SERVER['REQUEST_METHOD'] === 'POST' and count($_POST) > 0) {
-
+ 
     // Gets all the shelter info for the volunteer page
     if (isset($_POST['getAllShelters'])) {
       getAllShelters();
@@ -29,10 +29,10 @@
   * @return {object} - a JSON object with all the shelters in the format 'shelterName - addressLine1'
   */
   function getAllShelters() {
-    global $mysqli;
+     global $mysqli;
 
     // Prepare the select statment
-    if (!($stmt = $mysqli->prepare("SELECT concat(shelterName, ' - ', addressLine1) FROM shelters"))) {
+    if (!($stmt = $mysqli->prepare("SELECT concat(shelterName, ' - ', addressLine1) as display, emailAddress FROM shelters"))) {
       echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
       die();
     }

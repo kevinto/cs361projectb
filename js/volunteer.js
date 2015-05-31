@@ -1,0 +1,62 @@
+function populateShelterDropbox() {
+
+  // Define a return function
+  var shelterDropDownReturnFunc = function(request) {
+    return function() {
+      if (request.readyState == 4) {
+        // Result is an array of JSON objects
+        var resultObj = JSON.parse(request.responseText);
+        alert("test");
+      }
+    }
+  };
+
+  // Create object that holds the SQL query parameters
+  var shelterParams = {
+    getAllShelters: true
+  };
+
+  callAppPhp(shelterDropDownReturnFunc, shelterParams);
+}
+
+/*
+* Calls the backend PHP code for the 'app' page
+* @param {object} returnFunc - function that is executed after PHP
+*                              backend is done executing
+* @param {object} postParams - params you want to pass to the PHP backend
+*/
+function callAppPhp(returnFunc, postParams) {
+    if (typeof (postParams) === 'undefined') {
+        postParams = '';
+    }
+
+    var request = new XMLHttpRequest();
+    var url = 'shelter.php';
+    var postParamsStr = '';
+
+    // Create the post parameter string
+    if (postParams.length !== 0) {
+        var i = 0;
+        for (var property in postParams) {
+            if (postParams.hasOwnProperty(property)) {
+                if (i === 0) {
+                    postParamsStr += property + '=' + postParams[property];
+                }
+                else {
+                    postParamsStr += '&' + property + '=' + postParams[property];
+                }
+                i++;
+            }
+        }
+    }
+
+    if (!request) {
+        return false;
+    }
+
+    request.onreadystatechange = returnFunc(request);
+    request.open('POST', url, true);
+    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    request.send(postParamsStr);
+    return request;
+}
