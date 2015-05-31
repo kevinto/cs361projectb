@@ -12,7 +12,7 @@
     public function testVolunteerPageHTMLIsValid()
     {
       $validator=new HTML5Validate(false);
-      $output=file_get_contents('volunteer.php');
+      $output=file_get_contents('./volunteers.html');
       $result=$validator->Assert($output);
       $this->assertTrue($result, $validator->message);
     }
@@ -20,15 +20,15 @@
     // Test if volunteer page title is correct
     public function testTitleIsCorrect()
     {
-      $output=file_get_contents('./volunteer.php');
-      $this->assertContains('<title>Forever Furries Volunteer Page</title>', $output);
+      $output=file_get_contents('./volunteers.html');
+      $this->assertContains('<title>Forever Furries - Volunteers</title>', $output);
     }
 
     // Test if header for volunteer page is correct
     public function testVolunteerHeaderIsCorrect()
     {
-      $output=file_get_contents('volunteer.php');
-      $this->assertContains('<h1>Forever Furries Volunteer Page</h1>', $output);
+      $output=file_get_contents('./volunteers.html');
+      $this->assertContains('<h1>Volunteers Needed!</h1>', $output);
     }
   }
 
