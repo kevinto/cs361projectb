@@ -19,6 +19,9 @@
 	<body role="document">
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script src="showhide.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 		<!-- Fixed navbar -->
@@ -68,9 +71,72 @@
 							Volunteers Needed!
 					</h1>
 					<p>
-							Your local shelter is able to operate thanks to amazing support from local volunteers. If you would like to help care for the special pets in your community, plesae select your shelter and submit your volunteer information form.
+							Your local shelter is able to operate thanks to amazing support from local volunteers. If you would like to help care for the special pets in your community, please select your shelter and submit your volunteer information form below.
 					</p>
 			</div>
+			<form class="form-inline" method="POST" action="sendform.php">
+				
+				<p>
+					<!--Placeholder select dropdown start-->
+					<label for="shelter" name="mySelect" onChange="showhide.js">Shelter</label>
+					<br>
+					<select class="form-control" id="mySelect" name="mySelect" required> 
+						<!--This will be changed following integration with Kevin and Drea-->
+						<!--Will need to populate value of each option with email address of user from database-->
+						<!--Once that is implemented, functionality here and in sendform.php should work-->
+						<!--Will need to test by putting one of our email addresses into the database in place of a shelter's-->
+							<option value="none" disabled selected style='display:none;'>Select a shelter</option>
+							<option value="Silicon">Silicon Shelter</option>
+							<option value="LandofPorts">Land of Ports Shelter</option>
+							<option value="Vantucky">Vantucky Animal Shelter</option>
+							<option value="BigApple">Big Apple Animal Shelter</option>
+							<option value="Pawtucket">Pawtucket Animal Shelter</option>
+							<option value="Emerald">Emerald Animal Shelter</option>
+					</select>
+				</p>
+				<!--Placeholder end-->
+
+				<p>
+					<div class="form-group">
+					    <label for="firstName">First name </label>
+						<input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter first name " required>
+						&nbsp; &nbsp;
+					</div>
+					<div class="form-group">
+					    <label for="lastName">Last name </label>
+						<input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter last name " required>
+					</div>
+				</p>
+				<p>
+					<div class="form-group">
+					    <label for="email">Email</label>
+					    <br>
+						<input type="email" size="30" class="form-control" id="Email" name="Email" placeholder="Enter email address" required>
+					</div>
+				</p>
+				<p>
+					<div class="form-group">
+						<label for="experience">Experience</label>
+						<br>
+						<textarea class="form-control" rows="5" cols="65" maxlength="100" name = "Experience" placeholder="Briefly describe any experience with animals" id="Experience"></textarea>
+					</div>
+				</p>
+				<p>
+					<div class="form-group">
+						<label for="questions">Questions?</label>
+						<br>
+						<textarea class="form-control" maxlength="100" rows="5" cols="65" name="Questions" placeholder="Ask away" id="Questions"></textarea>
+					</div>
+				</p>
+				<div id="submitreset">
+					<p>
+						<input class="btn btn-primary" type="Submit" name="Submit" id="mySubmit" value="Submit">
+						&nbsp; &nbsp;
+						<input class="btn btn-primary" type="Reset" name="Reset" id="myReset" value="Reset">
+					</p>
+				</div>
+					
+				</form>
 		</div>
 	</body>
 	<footer class="footer">
