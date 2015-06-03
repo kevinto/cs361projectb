@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Select Animals unit test</title>
+    <link type="text/css" rel="stylesheet" href=""/>
+    <script src = 'select_animal_type.js'></script>
+</head>
+<body>
+    <p>Tests entire system</p>
+    <div class="form_to_submit_ajax_call">
+   		<select id="animal_type">
+                <option value="cat">Cats</option>
+                <option value="dog">Dogs</option>
+                <input type="button" value="Submit" onclick="animalDB_ajaxCall()">
+        </select>	
+    </div>
+    
+    <p>Tests if submit button is connected to javascript file and if function can 
+    	get user selection. </p>
+    	
+    <div id="test1">	
+    </div>
+	
+	<p>Tests if ajax call is successful. </p>
+    	<input type="button" value="Submit" onclick="serverRequest()">
+    <div id="test2">	
+    </div>
+    
+    <p>Tests if post method to PHP database query file is successful. </p>
+    <div id="test3">	
+    </div>
+    
+    <p>Displays the table of cats and dogs</p>
+    	<input type="button" value="Submit" onclick="createTable([{'id':1,'animal':'dog','picture':'uploads\/linus.JPG','description':'Linus wants to tell you that this is a unit test.','sex':'male','age':4,'size':'large','location':'SLC'}])">
+    <div id="table">
+    </div>
+    
+</body>
+
+</html>
