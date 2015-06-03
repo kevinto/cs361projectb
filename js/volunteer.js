@@ -6,7 +6,7 @@ function populateShelterDropbox() {
       if (request.readyState == 4) {
         // Result is an array of JSON objects
         var resultObj = JSON.parse(request.responseText);        
-        var selectElement = document.getElementById('SelectShelter');
+        var selectElement = document.getElementById('mySelect');
         
         for (var i = 0; i < resultObj.length; i++) {
         	var currentObj = JSON.parse(resultObj[i]);
