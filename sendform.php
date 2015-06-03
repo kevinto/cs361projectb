@@ -31,8 +31,8 @@
 					$user = "colliell@onid.orst.edu"; //delete this line and use $email for real testing
 					$subject2 = "Your form has been submitted"; 
 
-					//$shelter = $_POST['mySelect'];
-					$shelter = "collinsreilly@gmail.com";
+					//$shelter = $_POST['mySelect']; changing to instructor for this project
+					$shelter = "mckeesh@onid.oregonstate.edu"; //instructor's email
 					$subject = "Volunteer form submitted"; 
 
 					$first = $_POST['firstName'] ; 
@@ -61,7 +61,7 @@
 					} 
 					else 
 					{
-						print ("We encountered an error sending your mail, please notify webmaster@foreverfurries<br>");  
+						print ("We encountered an error sending your mail, please notify webmaster@foreverfurries.com<br>");  
 					}
 				?> 
 			</h1>
