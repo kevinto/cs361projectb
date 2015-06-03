@@ -6581,4 +6581,35 @@ button.close {
     display: none !important;
   }
 }
+
+#pettable{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px #888888;
+    text-align: center;
+    padding: 5px;
+}
+
+#pettable th { 
+    background: #8b8b8b;
+	text-align: center;
+	padding: 10px; 
+	color: #fff;
+}
+
+#pettable tr {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cell {
+    padding: 10px;
+    text-align: center;
+}
+
 /*# sourceMappingURL=bootstrap.css.map */

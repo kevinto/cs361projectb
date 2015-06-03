@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="css/bootstrap.css"></link>
 		<!-- Bootstrap theme -->
 		<link rel="stylesheet" href="css/bootstrap-theme.css"></link>
+		 <script src = 'select_animal_type.js'></script>
 	</head>
 	<body role="document">
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -71,41 +72,22 @@
 						To aid you in finding your new pet, please use the filter options below to narrow down your search.
 						<div style="text-align: center">
 							<h4>
-								<a href="adoptions.php?add=cat">
-									Search felines
+								<a>
+									<button onclick="animalDB_ajaxCall('cat')">Search Felines</button>
 									<img class="img-thumbnail" alt="Missing Pet" src="pic/catlogo.gif" style="float: center; width: 200px; height: 200px;" ></img>
 								</a>
-								<a href="adoptions.php?add=dog">
+								<a>
 									<img class="img-thumbnail" alt="Missing Pet" src="pic/doglogo.gif" style="float: center; width: 200px; height: 200px;" ></img>
-									Search canines
+									<button onclick="animalDB_ajaxCall('dog')">Search Canines</button>
 								</a>
 							</h4>
 						</div>
-						<!--Unit test for URL change-->
-						<button onclick="myFunction()">Unit test for URL refresh</button>
-						<p id="search"></p>
-						<script>
-							function myFunction() {
-							    var x = document.URL;
-							    document.getElementById("search").innerHTML = x;
-							}
-						</script>
-						<!--Variable set for cat or dog choice on page refresh-->
-						<?php
-							session_start();
-							if($_GET["add"] == 'cat'){
-								$_SESSION["search"] = "cat";
-							}
-							elseif($_GET["add"] == 'dog'){
-								$_SESSION["search"] = "dog";
-							}
-							echo "You have chosen: ";
-							echo $_SESSION["search"];
-							session_destroy();
-						?>
-					</p>
+						
+						
 			</div>
 		</div>
+		<div id="pettable">
+    	</div>
 	</body>
 	<footer class="footer">
 		<div class="container">

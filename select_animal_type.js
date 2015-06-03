@@ -1,8 +1,8 @@
-function animalDB_ajaxCall(){
-	var animalType = document.getElementById("animal_type").value;
-	
+function animalDB_ajaxCall(animal){
+	var animalType = animal;
 	//Tests if html is connecting and if retrieved user input
-	document.getElementById("test1").innerHTML=animalType;
+	//document.getElementById("test1").innerHTML=animalType;
+	console.log(animal);
 	serverRequest(animalType);
 };
 
@@ -18,8 +18,8 @@ var serverRequest = function(animal){
     httpRequest.onreadystatechange = function() {
         if (httpRequest.readyState === 4) {
             if (httpRequest.status === 200) {
-            	document.getElementById("test2").innerHTML="Connection successful";
-            	document.getElementById("test3").innerHTML=httpRequest.responseText;
+            	//document.getElementById("test2").innerHTML="Connection successful";
+            	//document.getElementById("test3").innerHTML=httpRequest.responseText;
             	var data = JSON.parse(httpRequest.responseText);
             	console.log(data);
             	createTable(data);
@@ -35,16 +35,16 @@ var serverRequest = function(animal){
 var createTable = function(data){
 	//Take this out when we have the length of the query results
 	
-	var div = document.getElementById("table");
+	var div = document.getElementById("pettable");
     
     while (div.firstChild){
         div.removeChild(div.firstChild);
     }
     
     var table = document.createElement("table");
-    table.setAttribute("border", "2", "2");
     var tHead = document.createElement("thead");
     var tRow = document.createElement("tr");
+    
     
     var tH1 = document.createElement("th");
     var tHeadText1 = document.createTextNode("PICTURE");
@@ -87,8 +87,8 @@ var createTable = function(data){
         var url = "http://web.engr.oregonstate.edu/~hansejod/CS361/"+data[i].picture;
         console.log(url);
         picture.setAttribute("src", url);
-        picture.setAttribute("height", 50);
-        picture.setAttribute("width", 50);
+        picture.setAttribute("height", 75);
+        picture.setAttribute("width", 75);
         cell1.appendChild(picture);
         mainRows.appendChild(cell1);
             
