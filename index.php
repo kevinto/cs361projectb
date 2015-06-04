@@ -3,19 +3,19 @@
 	<head>
 		<link rel="shortcut icon" href="pic/favicon.ico">
 		<link rel="shortcut icon" href="pic/ff.ico">
-		<meta charset="utf-8"></meta>
-		<meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
-		<meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+		<meta charset="utf-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
 		<!-- Important meta tags according to getbootstrap.com -->
-		<meta content="" name="This is the homepage for Forever Furries Adoption repository"></meta>
-		<meta content="" name="CS361 Project B"></meta>
+		<meta content="" name="This is the homepage for Forever Furries Adoption repository">
+		<meta content="" name="CS361 Project B">
 		<title>
 			Forever Furries - Home
 		</title>
 		<!-- Bootstrap core CSS -->
-		<link rel="stylesheet" href="css/bootstrap.css"></link>
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<!-- Bootstrap theme -->
-		<link rel="stylesheet" href="css/bootstrap-theme.css"></link>
+		<link rel="stylesheet" href="css/bootstrap-theme.css">
 	</head>
 	<body role="document">
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -29,7 +29,7 @@
 				<div class="navbar-header">
 					<!-- Upper left page name button -->
 					<a class="navbar-brand" href="home.html">
-						<img src="pic/foreverfurries.gif" height="25px" widht="150px"></img>
+						<img src="pic/foreverfurries.gif" height="25px" widht="150px">
 					</a>
 				</div>
 				<!-- Navigation bar menu items -->
@@ -80,34 +80,34 @@
 			</div>
 			<!-- Create 10x clickable pet thumbnail images -->
 			<a href="adoptions.php">
-				<img class="img-thumbnail" alt="Missing Pet" src="pic/cat1.jpg" style="width: 200px; height: 200px;" ></img>
+				<img class="img-thumbnail" alt="Missing Pet" src="pic/cat1.jpg" style="width: 200; height: 200px;" ></img>
 			</a>
 			<a href="adoptions.php">
-				<img class="img-thumbnail" alt="Missing Pet" src="pic/dog1.jpg" style="width: 200px; height: 200px;" ></img>
+				<img class="img-thumbnail" alt="Missing Pet" src="pic/dog1.jpg" style="width: 200; height: 200;" ></img>
 			</a>
 			<a href="adoptions.php">
-				<img class="img-thumbnail" alt="Missing Pet" src="pic/dog2.jpg" style="width: 200px; height: 200px;" ></img>
+				<img class="img-thumbnail" alt="Missing Pet" src="pic/dog2.jpg" style="width: 200; height: 200;" ></img>
 			</a>
 			<a href="adoptions.php">
-				<img class="img-thumbnail" alt="Missing Pet" src="pic/cat2.jpg" style="width: 200px; height: 200px;" ></img>
+				<img class="img-thumbnail" alt="Missing Pet" src="pic/cat2.jpg" style="width: 200; height: 200;" ></img>
 			</a>
 			<a href="adoptions.php">
-				<img class="img-thumbnail" alt="Missing Pet" src="pic/cat3.jpg" style="width: 200px; height: 200px;" ></img>
+				<img class="img-thumbnail" alt="Missing Pet" src="pic/cat3.jpg" style="width: 200; height: 200;" ></img>
 			</a>
 			<a href="adoptions.php">
-				<img class="img-thumbnail" alt="Missing Pet" src="pic/dog3.jpg" style="width: 200px; height: 200px;" ></img>
+				<img class="img-thumbnail" alt="Missing Pet" src="pic/dog3.jpg" style="width: 200; height: 200;" ></img>
 			</a>
 			<a href="adoptions.php">
-				<img class="img-thumbnail" alt="Missing Pet" src="pic/cat4.jpg" style="width: 200px; height: 200px;" ></img>
+				<img class="img-thumbnail" alt="Missing Pet" src="pic/cat4.jpg" style="width: 200; height: 200;" ></img>
 			</a>
 			<a href="adoptions.php">
-				<img class="img-thumbnail" alt="Missing Pet" src="pic/cat5.jpg" style="width: 200px; height: 200px;" ></img>
+				<img class="img-thumbnail" alt="Missing Pet" src="pic/cat5.jpg" style="width: 200; height: 200;" ></img>
 			</a>
 			<a href="adoptions.php">
-				<img class="img-thumbnail" alt="Missing Pet" src="pic/dog4.jpg" style="width: 200px; height: 200px;" ></img>
+				<img class="img-thumbnail" alt="Missing Pet" src="pic/dog4.jpg" style="width: 200; height: 200;" ></img>
 			</a>
 			<a href="adoptions.php">
-				<img class="img-thumbnail" alt="Missing Pet" src="pic/dog5.jpg" style="width: 200px; height: 200px;" ></img>
+				<img class="img-thumbnail" alt="Missing Pet" src="pic/dog5.jpg" style="width: 200; height: 200;" ></img>
 			</a>
 		</div>
 	</body>
@@ -115,7 +115,7 @@
 		<div class="container">
 			<br /><br />
 			<div style="text-align:center">
-				<img src="pic/footerlogo.gif" height="70" width="150"></img>
+				<img src="pic/footerlogo.gif" height="70" width="150">
 				<p class="text-muted">&copy;<br /></p>
 			</div>
 			<br /><br />
